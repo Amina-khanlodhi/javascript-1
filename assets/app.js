@@ -512,6 +512,41 @@ function convertTime() {
   
   // Call the function to execute the conversion
   convertTime();
+
   
+  // let studentName = [];
+
+  let studentName = new Array();
+
   
-  
+  let studentNames = ["Alice", "Bob", "Charlie", "Diana"];
+
+  let numbers = [1, 2, 3, 4, 5];
+  let booleanValues = [true, false, true, false];
+  let mixedArray = ["Alice", 42, true, { name: "Bob" }, [1, 2, 3]];
+
+  // Declare and initialize the array with education qualifications
+let qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+// Output the qualifications to the console
+console.log("Available Education Qualifications in Pakistan:");
+qualifications.forEach(function(qualification) {
+   document.write(qualifications);
+});
+
+
+// Array to store student names
+let studentsNames = ["Alice", "Bob", "Charlie"];
+
+// Array to store scores of students
+let scores = [420, 380, 450]; // Scores out of 500 for each student
+
+// Calculate percentages
+let totalMarks = 500;
+let percentages = scores.map(score => (score / totalMarks) * 100);
+
+// Display scores and percentages
+console.log("Student Scores and Percentages:");
+for (let i = 0; i < studentNames.length; i++) {
+    document.write(`${studentNames[i]} scored ${scores[i]} out of ${totalMarks}, ${percentages[i]}%`);
+}
