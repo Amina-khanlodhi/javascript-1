@@ -516,7 +516,7 @@ function convertTime() {
   
   // let studentName = [];
 
-  let studentName = new Array();
+  let studentName     = new Array();
 
   
   let studentNames = ["Alice", "Bob", "Charlie", "Diana"];
@@ -550,3 +550,42 @@ console.log("Student Scores and Percentages:");
 for (let i = 0; i < studentNames.length; i++) {
     document.write(`${studentNames[i]} scored ${scores[i]} out of ${totalMarks}, ${percentages[i]}%`);
 }
+
+let multiDimArray = [[]];
+
+let multiArray = [[], [], []]; // Example with three empty arrays inside
+
+multiDimArray.push([1, 2, 3]); // Pushing an array as an element
+multiDimArray[1] = ["a", "b", "c"]; // Assigning an array at index 1
+
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+document.write(matrix[0][0]); // Outputs: 1 (first row, first column)
+document.write(matrix[1][2]); // Outputs: 6 (second row, third column)
+document.write(matrix[2][1]); // Outputs: 8 (third row, second column)
+
+// Loop to print numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+  document.write(i);
+}
+
+// Prompt the user for input
+let number = parseInt(prompt("Enter the number for multiplication table:"));
+let length = parseInt(prompt("Enter the length of the multiplication table:"));
+
+// Validate inputs
+if (isNaN(number) || isNaN(length)) {
+    console.log("Invalid input. Please enter valid numbers.");
+} else {
+    // Print the multiplication table
+    console.log(`Multiplication table for ${number} up to ${length} rows:`);
+    for (let i = 1; i <= length; i++) {
+        console.log(`${number} * ${i} = ${number * i}`);
+    }
+}
+
+
